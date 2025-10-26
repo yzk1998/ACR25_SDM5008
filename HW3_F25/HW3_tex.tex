@@ -1,0 +1,90 @@
+\documentclass[12pt,a4paper]{article}
+
+% For graphics
+\usepackage{graphicx}
+\usepackage{float}
+
+% For code formatting
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    backgroundcolor=\color{gray!10}
+}
+
+% Page margin
+\usepackage[margin=1in]{geometry}
+
+\title{HW3: Isaac Lab}
+\author{Name: Yang Zekun \quad Student ID: 12531446}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Screenshots}
+
+\subsection{Scene Layout}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{HW3_pc1.png}
+    \caption{Custom scene layout}
+\end{figure}
+
+\subsection{Running Effect}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{HW3_pc2.png}
+    \caption{Robot running effect}
+\end{figure}
+
+\section{Scene Design Description}
+
+The custom scene consists of five cuboid-shaped platforms. 
+Each object has specific dimensions, positions, and color tones as described below:
+
+\begin{itemize}
+    \item \textbf{CuboidDeformable1} \\
+    Size: 4.5 m × 4.5 m × 0.07 m (length × width × height) \\
+    Position: x = 0.0 m, y = –5.0 m, z = 0.07 m \\
+    Physics: Kinematic enabled, mass = 1.0 kg \\
+    Color: Light green (R = 0.1, G = 1.0, B = 0.1) \\
+    Purpose: Large flat platform.
+
+    \item \textbf{CuboidDeformable2} \\
+    Size: 4.0 m × 4.0 m × 0.07 m \\
+    Position: x = 0.0 m, y = –6.0 m, z = 0.15 m \\
+    Physics: Kinematic enabled, mass = 1.0 kg \\
+    Color: Medium green (R = 0.3, G = 1.0, B = 0.3) \\
+    Purpose: Slightly smaller platform placed after CuboidDeformable1.
+
+    \item \textbf{CuboidDeformable3} \\
+    Size: 3.0 m × 3.0 m × 0.07 m \\
+    Position: x = 0.0 m, y = –7.0 m, z = 0.20 m \\
+    Physics: Kinematic enabled, mass = 1.0 kg \\
+    Color: Light green (R = 0.5, G = 1.0, B = 0.5) \\
+    Purpose: Intermediate platform for stepping or obstacle crossing.
+
+    \item \textbf{CuboidDeformable4} \\
+    Size: 2.0 m × 2.0 m × 0.07 m \\
+    Position: x = 0.0 m, y = –8.0 m, z = 0.25 m \\
+    Physics: Kinematic enabled, mass = 1.0 kg \\
+    Color: Pale green (R = 0.7, G = 1.0, B = 0.7) \\
+    Purpose: Smaller elevated step.
+
+    \item \textbf{CuboidDeformable5} \\
+    Size: 1.0 m × 1.0 m × 0.07 m \\
+    Position: x = 0.0 m, y = –9.0 m, z = 0.30 m \\
+    Physics: Kinematic enabled, mass = 1.0 kg \\
+    Color: Very light green (R = 0.9, G = 1.0, B = 0.9) \\
+    Purpose: Final small stepping platform.
+\end{itemize}
+
+
+
+\end{document}
